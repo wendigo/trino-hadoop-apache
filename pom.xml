@@ -642,6 +642,9 @@
                                         <exclude>org/apache/hadoop/crypto/key/kms/KMSClientProvider$*.class</exclude>
                                         <exclude>org/apache/hadoop/security/LdapGroupsMapping.class</exclude>
                                         <exclude>org/apache/hadoop/security/LdapGroupsMapping$*.class</exclude>
+                                        <exclude>org/apache/hadoop/security/UserGroupInformation.class</exclude>
+                                        <exclude>org/apache/hadoop/security/UserGroupInformation$*.class</exclude>
+                                        <exclude>org/apache/hadoop/fs/CommonConfigurationKeys.class</exclude>
                                     </excludes>
                                 </filter>
                                 <filter>
