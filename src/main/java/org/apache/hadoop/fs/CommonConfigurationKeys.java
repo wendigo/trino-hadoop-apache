@@ -335,6 +335,17 @@ public class CommonConfigurationKeys extends CommonConfigurationKeysPublic {
     public static final long HADOOP_SECURITY_UID_NAME_CACHE_TIMEOUT_DEFAULT =
             4*60*60; // 4 hours
 
+    /**
+     * @see
+     * <a href="{@docRoot}/../hadoop-project-dist/hadoop-common/core-default.xml">
+     * core-default.xml</a>
+     */
+    public static final String HADOOP_KERBEROS_KEYTAB_LOGIN_AUTORENEWAL_ENABLED =
+            "hadoop.kerberos.keytab.login.autorenewal.enabled";
+    /** Default value for HADOOP_KERBEROS_KEYTAB_LOGIN_AUTORENEWAL_ENABLED. */
+    public static final boolean
+            HADOOP_KERBEROS_KEYTAB_LOGIN_AUTORENEWAL_ENABLED_DEFAULT = false;
+
     public static final String  IPC_CLIENT_ASYNC_CALLS_MAX_KEY =
             "ipc.client.async.calls.max";
     public static final int     IPC_CLIENT_ASYNC_CALLS_MAX_DEFAULT = 100;
