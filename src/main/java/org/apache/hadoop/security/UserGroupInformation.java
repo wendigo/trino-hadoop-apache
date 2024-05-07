@@ -1871,8 +1871,7 @@ public class UserGroupInformation {
      */
     @InterfaceAudience.Public
     @InterfaceStability.Evolving
-    public <T> T callAs(Callable<T> action
-    ) throws IOException, InterruptedException {
+    public <T> T callAs(Callable<T> action) throws IOException, InterruptedException {
         try {
             if (LOG.isDebugEnabled()) {
                 LOG.debug("PrivilegedAction [as: {}][action: {}]", this, action,
@@ -1912,8 +1911,7 @@ public class UserGroupInformation {
      */
     @InterfaceAudience.Public
     @InterfaceStability.Evolving
-    public <T> T doAs(PrivilegedExceptionAction<T> action
-    ) throws IOException, InterruptedException {
+    public <T> T doAs(PrivilegedExceptionAction<T> action) throws IOException, InterruptedException {
         return callAs(action::run);
     }
 
